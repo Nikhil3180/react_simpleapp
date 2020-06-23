@@ -7,7 +7,7 @@ import VideoList from './components/video_list';
 
 const API_KEY = 'AIzaSyD-gojEAlCnqJ3iAMEUR7NwZNbOicYgvwY';
 
-YTSearch({key : API_KEY, term : 'surfboards'}, function(data){
+YTSearch({key : API_KEY, term : 'asal mei'}, function(data){
   console.log(data)
 });
 
@@ -26,7 +26,7 @@ class App extends Component {
 
     this.state = {videos: []};
 
-    YTSearch({key : API_KEY, term : 'surfboards'}, (data) => {
+    YTSearch({key : API_KEY, term : 'asal mei'}, (data) => {
       this.setState({videos : data});
       console.log(data)
     });
